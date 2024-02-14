@@ -15,6 +15,9 @@ body {
     background-position: center;
     background-size: cover;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .header__nav {
     width: 1400px;
@@ -164,17 +167,215 @@ body {
 .header__title--box__contain small {
     color: rgb(209, 206, 206);
 }
+.header__btn {
+    margin-bottom: -35px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid rgb(206, 206, 206);
+    color: rgb(222, 18, 127);
+    font-size: 30px;
+    background-color: #f8f6f7;
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+        background-color: rgb(222, 18, 127);
+        color: white;
+    }
+}
 
 
 
+.main {
+    width: 100%;
+}
+
+
+.context {
+    width: 1400px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.context__img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.context__img img {
+    width: 80%;
+    border-radius: 190px 200px 40px 200px;
+}
+.context__text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.context__text h3 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    width: 90%;
+}
+.context__text p {
+    font-size: 14px;
+    width: 85%;
+}
+
+.box {
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(
+        rgba(145, 11, 83, 0.3),
+        rgba(148, 13, 85, 0.3)
+    ), url("./images/back-box.jpg");
+    background-position: bottom;
+    background-size: cover;
+    color: white;
+}
+.box__content {
+    width: 1000px;
+    height: 300px;
+    margin: 0px auto;
+    display: grid;
+    padding: 50px 0;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.box__content--one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    cursor: pointer;
+    transition: .5s;
+    &:hover {
+        scale: 1.1;
+    }
+}
+.box__content--one i {
+    font-size: 55px;
+    color: rgb(240, 22, 138);
+    text-shadow: 2px 2px 2px #000;
+}
+.box__content--one p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.box__img {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.box__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
+.contact {
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.contact__text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    row-gap: 20px;
+}
+.contact__text h2 {
+    font-size: 29px;
+    width: 80%;
+    color: rgb(240, 22, 138);
+}
+.contact__text p {
+    font-size: 15px;
+    width: 94%;
+}
+.contact__text ul {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contact__text ul li i {
+    font-size: 24px;
+    padding-right: 10px;
+    color: rgb(240, 22, 138);
+}
+.contact__text ul li b {
+    font-size: 18px;
+}
+.contact__text button {
+    width: 250px;
+    height: 50px;
+    color: white;
+    background-color: rgb(240, 22, 138);
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+        background-color: rgb(191, 13, 108);
+    }
+}
 
 
+.contact__img {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.contact__img img {
+    width: 100%;
+    height: 80%;
+    border-radius: 200px 200px 200px 50px;
+}
 
 
-
-
-
-
+.footer {
+    margin-top: 30px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(51, 13, 45);
+    color: white;
+}
+.footer__text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+.footer__text span i {
+    font-size: 22px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+        color: rgb(222, 18, 127);
+    }
+}
+.footer__text p {
+    color: rgb(206, 206, 206);
+}
